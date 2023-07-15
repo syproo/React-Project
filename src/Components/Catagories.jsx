@@ -122,7 +122,7 @@ export const Catagories = () => {
                     <img className="seth" src="src/assets/4shoes.png" alt="" width={200} />
                     <div className="set">
                         <h1 className="head2">Men in black<br /><p className="para">150 $</p></h1>
-                        <button type="button"><img className="btn1" src="src/assets/cart.png" alt="" width={40} /></button>
+                        <button type="button"><img className="btn1" src="src/assets/cart.png" alt="" width={41} /></button>
                     </div>
 
                 </div>
