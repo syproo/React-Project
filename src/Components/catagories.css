@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+.main {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    
+    width: 100%;
+    height:auto;
+
+   padding-top: 20px;
+   padding-bottom: 20px;
+    
+    justify-content: space-around;
+    position: absolute;
+    top: 100%;
+
+}
+.head1{
+    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 45px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    padding: 10px 0  10px;
+    
+}
+
+.head2{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.submain{
+display: flex;
+justify-content: center;
+flex-direction: row;
+height: 29%; 
+
+}
+
+.btn1{
+
+    background-color: rgb(73, 73, 34);
+    border-radius: 50%;
+}
+
+ .btn1:hover{
+    background-color: black;
+ }
+
+.items{
+    width: 15%;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-top: 14px;
+   
+    display: inline-block;
+    margin: 0px 40px 0px 40px; 
+    box-shadow: 0 0 20px 2px rgba(0,0,0, .1);
+    transition: 1s;
+}
+
+.items:hover{
+   
+    transform: scale(1.2);
+    z-index: 2;
+   
+}
+.para{
+
+    font-size:medium;
+}
+.set{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 29px;
+    
+}
+
+.seth{
+
+    height: 200px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .head1 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .items {
+      width: 30%;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 14px;
+    }
+  }
+  
+  /* For devices with a maximum width of 480px (e.g., mobile phones) */
+  @media screen and (max-width: 480px) {
+    .head1 {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .items {
+      width: 50%;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 14px;
+    }
+  }
