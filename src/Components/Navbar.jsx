@@ -1,14 +1,20 @@
 import { BsBell, BsCart3 } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <div className="flex justify-between p-4 w-full bg-gray-800 text-white cursor-pointer ">
-      <div className="w-52">
+      <NavLink to={"/"} className="w-52">
         <img src="src/assets/logo.png" alt="" />
-      </div>
+      </NavLink>
       <div className="flex items-center justify-end gap-6 font-font text-lg">
-        <button>Sign up</button>
-        <button>Log in</button>
+        <NavLink to={"/Signup"}>
+          <button>Sign up</button>
+        </NavLink>
+        <NavLink to={"/Login"}>
+          <button>Log in</button>
+        </NavLink>
+
         <i className="text-xl">
           <BsBell />
         </i>

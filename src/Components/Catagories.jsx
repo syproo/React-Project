@@ -1,4 +1,4 @@
-import React from "react"
+
 import "./catagories.css"
 
 
@@ -48,7 +48,7 @@ export const Catagories = () => {
 
             </div>
         
-            <h1 className="head1">Man's T Shirts</h1>
+            <h1 className="head1">Men's T Shirts</h1>
 
             <div className="submain">
 
