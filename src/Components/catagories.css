@@ -35,6 +35,16 @@
     
 }
 
+.footer{
+  
+  position: relative;
+  top: 1300px;
+  background:#1B2937;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+}
+
 .head2{
     font-family: 'Roboto Condensed', sans-serif;
 

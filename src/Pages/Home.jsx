@@ -2,6 +2,7 @@ import { Navbar } from "../Components/Navbar";
 import { Banner } from "../Components/Banner";
 import { BannerFooter } from "../Components/BannerFooter";
 import { Catagories } from "../Components/Catagories";
+import { Footer } from "../Components/Footer";
 
 
 export const Home = () => {
@@ -12,6 +13,7 @@ export const Home = () => {
       <Banner />
       <BannerFooter />
       <Catagories />
+      <Footer />
 
     </>
   );
