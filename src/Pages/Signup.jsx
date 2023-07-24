@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-
-=======
 import { NavLink } from "react-router-dom";
->>>>>>> 9e9bf38600e65d22204ca1127a02edbcb2a4621c
 
 export const Signup = () => {
   return (
     <>
-<<<<<<< HEAD
-      
-=======
       <div>
         <div className="flex flex-col items-center  min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-700">
           <div className="w-64 ml-20">
@@ -30,7 +23,8 @@ export const Signup = () => {
                   <input
                     type="text"
                     name="name"
-                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  />
                 </div>
               </div>
               <div className="mt-4">
@@ -44,7 +38,8 @@ export const Signup = () => {
                   <input
                     type="email"
                     name="email"
-                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  />
                 </div>
               </div>
               <div className="mt-4">
@@ -58,7 +53,8 @@ export const Signup = () => {
                   <input
                     type="password"
                     name="password"
-                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  />
                 </div>
               </div>
               <div className="mt-4">
@@ -72,7 +68,8 @@ export const Signup = () => {
                   <input
                     type="password"
                     name="password_confirmation"
-                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  />
                 </div>
               </div>
               <a href="#" className="text-xs text-black hover:underline">
@@ -130,7 +127,6 @@ export const Signup = () => {
           </div>
         </div>
       </div>
->>>>>>> 9e9bf38600e65d22204ca1127a02edbcb2a4621c
     </>
   );
 };
