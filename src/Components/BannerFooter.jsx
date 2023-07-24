@@ -1,7 +1,7 @@
 export const BannerFooter = () => {
   return (
-    <div className="absolute w-full bottom-0 bg-[#fff324] p-4">
-      <div className="flex flex-col md:flex-row lg:flex-row text-center justify-between p-6">
+    <div className="absolute w-full bottom-0 bg-[#fff324] p-6">
+      <div className="flex flex-col lg:flex-row text-center justify-between py-8">
         <div>
           <h1 className="text-lg font-bold">Buy & sell almost anything</h1>
           <h3 className="text-lg ">

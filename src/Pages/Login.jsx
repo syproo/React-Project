@@ -1,6 +1,9 @@
 export const Login = () => {
   return (
     <>
+<<<<<<< HEAD
+     
+=======
       <div className="relative flex flex-col justify-center min-h-screen overflow-hidden bg-gray-700">
         <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl lg:max-w-xl">
           <h1 className="text-3xl font-semibold text-center text-gray-800 uppercase">
@@ -85,6 +88,7 @@ export const Login = () => {
           </p>
         </div>
       </div>
+>>>>>>> 9e9bf38600e65d22204ca1127a02edbcb2a4621c
     </>
   );
 };

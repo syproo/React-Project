@@ -1,8 +1,15 @@
+<<<<<<< HEAD
+
+=======
 import { NavLink } from "react-router-dom";
+>>>>>>> 9e9bf38600e65d22204ca1127a02edbcb2a4621c
 
 export const Signup = () => {
   return (
     <>
+<<<<<<< HEAD
+      
+=======
       <div>
         <div className="flex flex-col items-center  min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-700">
           <div className="w-64 ml-20">
@@ -123,6 +130,7 @@ export const Signup = () => {
           </div>
         </div>
       </div>
+>>>>>>> 9e9bf38600e65d22204ca1127a02edbcb2a4621c
     </>
   );
 };
