@@ -3,6 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
     extend: {},
@@ -13,6 +14,7 @@ export default {
         font:["Poppins", "sans-serif"]
     }
   },
-  plugins: [],
+  // eslint-disable-next-line no-undef
+  plugins: [require("tw-elements/dist/plugin.cjs")],
 }
 
