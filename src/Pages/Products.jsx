@@ -8,7 +8,7 @@ export const Products = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-3 gap-3 px-4 m-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 p-6 justify-items-center bg-yellow-400">
         {products.map((product) => (
           <Item
             key={product.id}

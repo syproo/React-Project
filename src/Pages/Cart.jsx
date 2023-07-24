@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../Context/CartContext";
+import { BsTrash3Fill } from "react-icons/bs";
 
 const ShippingCharges = 25;
 export const Cart = () => {
@@ -50,7 +51,7 @@ export const Cart = () => {
                           >
                             +
                           </button>
-                          <span className="text-lg rounded-lg p-2 border-2 border-gray-800 text-black bg-white">
+                          <span className="text-lg font-bold rounded-lg p-2 border-2 border-gray-800 text-black bg-white">
                             {item.quantity}
                           </span>
                           <button
@@ -62,10 +63,10 @@ export const Cart = () => {
                         </div>
                       </div>
                       <div
-                        className="flex items-center cursor-pointer"
+                        className="flex items-center cursor-pointer text-2xl "
                         onClick={() => removeFromCart(item.product.id)}
                       >
-                        <span>X</span>
+                        <BsTrash3Fill />
                       </div>
                     </div>
                   </div>

@@ -4,7 +4,7 @@ export const Login = () => {
       <div className="relative flex flex-col justify-center min-h-screen overflow-hidden bg-gray-700">
         <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl lg:max-w-xl">
           <h1 className="text-3xl font-semibold text-center text-gray-800 uppercase">
-            Sign in
+            Log in
           </h1>
           <form className="mt-6">
             <div className="mb-2">

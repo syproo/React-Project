@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BsCartPlus } from "react-icons/bs";
 
 // eslint-disable-next-line react/prop-types
 export const Item = ({ data, addToCart }) => {
@@ -12,34 +13,44 @@ export const Item = ({ data, addToCart }) => {
   return (
     <>
       <div>
-        <div className=" max-w-sm text-center text-white bg-white border border-yellow-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <div className="overflow-hidden bg-contain bg-no-repeat">
+        <div className=" max-w-sm p-2 text-center text-black border border-yellow-400 rounded-lg shadow-lg shadow-gray-800 bg-white">
+          <div className="overflow-hidden bg-contain bg-no-repeat shadow-md shadow-gray-800 rounded-lg">
             <img
-              className="object-fit w-96 h-80 rounded-t-lg transition duration-500 ease-in-out hover:scale-105"
+              onClick={() => {
+                setModal(true);
+              }}
+              className="object-fit w-96 h-80 rounded-lg transition duration-500 ease-in-out hover:scale-105"
               src={img}
               alt=""
             />
           </div>
-          <div>{name}</div>
-          <div>
+          <div className="text-lg font-bold underline p-2">{name}</div>
+          <div className="text-md font-semibold">
             <span>Rs : {price}</span>
           </div>
-          <div className="p-5">
-            <button
-              onClick={addToCart}
-              className=" rounded-full p-2 border-2 border-white text-white bg-gray-800 hover:bg-yellow-300 hover:text-black hover:border-yellow-500"
-            >
-              Add to Cart
-            </button>
-          </div>
-          <div>
-            <button
-              onClick={() => {
-                setModal(true);
-              }}
-            >
-              See More
-            </button>
+          <div className=" ">
+            <div className="p-2">
+              <button
+                onClick={addToCart}
+                className=" rounded-lg p-2 border-2 border-white text-white bg-gray-800 hover:bg-yellow-300 hover:text-black hover:border-yellow-500"
+              >
+                <a className="flex gap-2 items-center ">
+                  Add to Cart{" "}
+                  <span className="text-xl">
+                    <BsCartPlus />
+                  </span>
+                </a>
+              </button>
+            </div>
+            <div className="rounded-lg p-2 border text-bold text-white bg-gray-800 shadow-md shadow-gray-800 hover:bg-yellow-300 hover:text-black hover:border-yellow-500">
+              <button
+                onClick={() => {
+                  setModal(true);
+                }}
+              >
+                Product Description....
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -85,7 +96,12 @@ export const Item = ({ data, addToCart }) => {
                 onClick={addToCart}
                 className="rounded-xl p-2 border-2 border-white text-white bg-gray-800 hover:bg-yellow-400 hover:text-black  focus:outline-none focus:ring focus:ring-black"
               >
-                Add to Cart
+                <a className="flex items-center gap-2">
+                  Add to Cart{" "}
+                  <span className="text-xl">
+                    <BsCartPlus />
+                  </span>
+                </a>
               </button>
             </div>
           </div>
