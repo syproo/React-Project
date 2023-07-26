@@ -8,7 +8,6 @@ import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./Components/Navbar";
 import { useCart } from "./Context/CartContext";
 
-
 function App() {
   const { cartItemCount } = useCart();
 

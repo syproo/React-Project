@@ -1,17 +1,21 @@
 import { NavLink } from "react-router-dom";
+import mensshoes from "../assets/category img/mensshoes.jpg";
+import mensclothing from "../assets/category img/mensclothing.jpg";
+import mensaccessories from "../assets/category img/mensaccessories.jpg";
 
 export const Categories = () => {
   return (
-    <div className="w-[100%] h-[600px] bg-gray-800 p-8">
+    <div className="font-font">
+    <div className="w-[100%] h-auto bg-gray-800 p-28">
       <h2 className="text-5xl text-center text-white font-semibold pb-2">
         Product Category
       </h2>
       <NavLink to={"/Products"}>
-        <div className="flex  m-4  gap-8 p-4 justify-center">
-          <div className="flex-1 max-w-sm text-center overflow-hidden bg-gray-800 border rounded-lg shadow-md shadow-gray-600">
+        <div className="flex  md:flex-row flex-col m-4  gap-8 p-4 justify-center items-center">
+          <div className="flex-1 text-center max-w-sm overflow-hidden bg-gray-800 border rounded-lg shadow-md shadow-gray-600">
             <img
               className="rounded-t-sm transition duration-500 ease-in-out hover:scale-105"
-              src="src\assets\category img\mensshoes.jpg"
+              src={mensshoes}
               alt=""
             />
             <div className="p-5">
@@ -27,7 +31,7 @@ export const Categories = () => {
           <div className="flex-1 max-w-sm text-center overflow-hidden bg-gray-800 border rounded-lg shadow-md shadow-gray-600">
             <img
               className="rounded-t-sm transition duration-500 ease-in-out hover:scale-105"
-              src="src\assets\category img\mensclothing.jpg"
+              src={mensclothing}
               alt=""
             />
             <div className="p-5">
@@ -43,7 +47,7 @@ export const Categories = () => {
           <div className="flex-1 max-w-sm text-center overflow-hidden bg-gray-800 border rounded-lg shadow-md shadow-gray-600">
             <img
               className="rounded-t-sm transition duration-500 ease-in-out hover:scale-105"
-              src="src\assets\category img\mensaccessories.jpg"
+              src={mensaccessories}
               alt=""
             />
             <div className="p-5">
@@ -57,6 +61,7 @@ export const Categories = () => {
           </div>
         </div>
       </NavLink>
+    </div>
     </div>
   );
 };
